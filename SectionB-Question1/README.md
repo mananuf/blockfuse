@@ -15,3 +15,6 @@
 
 Solution to Questions attached to SectionB Question1 can be found in
 blockfuse/SectionB-Question1/sectionB-question1-essay.txt
+
+## ROUTING
+- run <php artisan route:list> to show you all the allowed routes/urls 
