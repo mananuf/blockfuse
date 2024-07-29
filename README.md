@@ -1,7 +1,7 @@
 # BLOCKFUSE TEST
 
-This project consist of 2 folders. each folder represents each question answered.
-Section
+This project consist of 2 folders. each folder represents each Section answered.
+In each folder, contains question answered
 
 git clone git@github.com:mananuf/blockfuse.git
 
