@@ -24,3 +24,5 @@ This project contains a Python implementation to find the median of two sorted a
 ## SECTION B: Question 1
 
 This project contains a php implementation using laravel framework
+- cd SectionB-Question1/
+- open the README.md file in the project directory for setup guide

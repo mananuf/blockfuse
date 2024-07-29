@@ -1,0 +1,31 @@
+Technical Questions
+Database Schema and Relationships
+
+The database schema includes two tables: authors and books. The authors table includes columns for id and name.
+The books table includes columns for id, title, author_id, publication_year, genre, and timestamps.
+The author_id column in the books table is a foreign key that references the id column in the authors table.
+This setup establishes a one-to-many relationship between authors and books, where one author can have multiple books and a book belongs to an author.
+
+Handling Relationships
+In Laravel, relationships are handled using Eloquent ORM.
+The Author model has a hasMany relationship with the Book model,
+while the Book model has a belongsTo relationship with the Author model.
+This allows us to easily retrieve an author's books and a book's author using Eloquent's relationship methods.
+
+Pagination
+
+Pagination for listing books can be implemented using Eloquent's paginate() method.
+In the BookController's index method, we return a paginated list of books by calling Book::paginate(25). with (25) as a standard for paginating items which reduces query time
+and improves performance.
+This will return 25 books per page and provide metadata for pagination,
+such as the current page, total pages, and links to next and previous pages.
+
+Securing the API Endpoints
+
+Securing the API endpoints involves several measures:
+
+Authentication: Use Laravel's built-in authentication features, such as Laravel Passport or Laravel Sanctum, to secure the API. This ensures that only authenticated users can access the endpoints.
+Authorization: Implement role-based access control (RBAC) to ensure that only users with the appropriate roles or permissions can perform certain actions, such as creating, updating, or deleting resources.
+Validation: Validate all incoming requests to ensure that the data is in the expected format and meets the required criteria. This helps prevent malicious data from being processed by the API.
+Rate Limiting: Implement rate limiting to protect the API from abuse and ensure fair usage by limiting the number of requests a user can make in a given period.
+HTTPS: Use HTTPS to encrypt data transmitted between clients and the server, protecting it from being intercepted by malicious actors.
