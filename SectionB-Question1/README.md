@@ -17,4 +17,14 @@ Solution to Questions attached to SectionB Question1 can be found in
 blockfuse/SectionB-Question1/sectionB-question1-essay.txt
 
 ## ROUTING
-- run <php artisan route:list> to show you all the allowed routes/urls 
+- run <php artisan route:list> to show you all the allowed routes/urls
+-  GET|HEAD        127.0.0.1:8000/api/authors
+   POST            127.0.0.1:8000/api/authors
+   GET|HEAD        127.0.0.1:8000/api/authors/{author}
+   PUT|PATCH       127.0.0.1:8000/api/authors/{author}
+   DELETE          127.0.0.1:8000/api/authors/{author}
+   GET|HEAD        127.0.0.1:8000/api/books
+   POST            127.0.0.1:8000/api/books
+   GET|HEAD        127.0.0.1:8000/api/books/{book}
+   PUT|PATCH       127.0.0.1:8000/api/books/{book}
+   DELETE          127.0.0.1:8000/api/books/{book} .
